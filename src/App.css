@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+.img:hover{
+    transform: scale(1.2); 
+}
+.card{
+    cursor: pointer;
+    width: 100%;
+    height: 25vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+Col{
+    width: 100px;
+}
+.Row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+    position: absolute;
+    font-family: 'Arial';
+    bottom: 0;
+    transform: translateY(50%);
+    transition: 0.3s;
+    font-size: 17px;
+    color: rgb(48, 29, 29);
+    padding: 10px;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.66);
+    box-shadow: -2px -10px 5px rgba(0, 0, 0, 0.144);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title:hover {
+    transform: translateY(10%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nevbar_com .nav-link{
+    background-color: aliceblue;
+    color: rgb(58, 69, 105);
+    border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar_com .nav-link:hover{
+    color: white;
+    background-color: rgb(58, 69, 105);
+    border-radius: 20px;
+}
+.navbar_com .navbar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width:1420px) {
+    .Row{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+@media (max-width:1000px) {
+    .Row{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+@media (max-width:500px) {
+    .Row{
+        grid-template-columns:repeat(1, 1fr);
+    }
 }
