@@ -5,7 +5,7 @@ import Entertain from "./Components/Entertain";
 import Business from "./Components/Business";
 import Tech from "./Components/Tech";
 import Home from "./Components/Home";
-import Top from "./Components/Top";
+import Top from "./Components/Health";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from 'react';
 import Footer from './Components/Footer';
@@ -36,7 +36,7 @@ function App() {
           <Routes>
             <Route exect path="/" element={<Home mode={mode}/>} />
             <Route exect path="/Home" element={<Home mode={mode}/>} />
-            <Route exect path="/Top" element={<Top mode={mode}/>} />
+            <Route exect path="/Health" element={<Top mode={mode}/>} />
             <Route exect path="/Business" element={<Business mode={mode} />} />
             <Route exect path="/Tech" element={<Tech mode={mode} />} />
             <Route exect path="/Entertain" element={<Entertain mode={mode} />} />

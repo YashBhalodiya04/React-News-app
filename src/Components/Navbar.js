@@ -32,8 +32,8 @@ export default function Navbar(props) {
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link" to="/Top">
-                Top
+              <Link className="nav-link" to="/Health">
+                Health
               </Link>
             </li>
             <li className="nav-item mx-3">
